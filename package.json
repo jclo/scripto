@@ -1,6 +1,6 @@
 {
   "name": "@mobilabs/scripto",
-  "version": "1.0.0-beta.1",
+  "version": "1.0.0",
   "description": "A boilerplate to create a Node.js script",
   "main": "index.js",
   "bin": {
