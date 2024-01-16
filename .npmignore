@@ -1,0 +1,6 @@
+*
+!bin
+!src/**/*
+!.eslintrc
+!main.js
+!rmdstore.sh

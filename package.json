@@ -1,0 +1,47 @@
+{
+  "name": "@mobilabs/scripto",
+  "version": "1.0.0-beta.1",
+  "description": "A boilerplate to create a Node.js script",
+  "main": "index.js",
+  "bin": {
+    "scripto": "./bin/scripto.js"
+  },
+  "scripts": {
+    "build:production": " --- BUILD (PRODUCTION) --- ",
+    "build:prod": "sh ./scripts/build.prod.sh",
+
+    "deployment": " --- DEPLOYMENT --- ",
+    "dep:prod": "rm -rf _prod-$npm_package_version && npm run build:prod && cp -r _prod _prod-$npm_package_version",
+
+    "others": " --- OTHERS ---",
+    "prepare": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jclo/scripto.git"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Mobilabs",
+    "email": "contact@mobilabs.fr",
+    "url": "http://www.mobilabs.fr"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jclo/scripto/issues"
+  },
+  "homepage": "https://github.com/jclo/scripto",
+  "dependencies": {
+    "nopt": "^7.2.0",
+    "shelljs": "^0.8.5"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.29.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "private":false
+}
